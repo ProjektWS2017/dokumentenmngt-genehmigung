@@ -7,7 +7,14 @@
     <bpmn:endEvent id="EndEvent_0de1iqz" name="Rechnung freigegeben">
       <bpmn:incoming>SequenceFlow_1i7zddg</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:startEvent id="StartEvent_1" name="&#xA;Rechnungs&#xA;Freigabeprozess&#xA;gestarted">
+    <bpmn:startEvent id="StartEvent_1" name="Rechnungs&#xA;Freigabeprozess&#xA;gestarted">
+      <bpmn:extensionElements>
+        <camunda:formData>
+          <camunda:formField id="Rechnungsnummer" label="Rechnungsnummer" type="long"/>
+          <camunda:formField id="Rechnungsbetrag" label="Rechnungsbetrag" type="long" defaultValue="1"/>
+          <camunda:formField id="Mitarbeitergruppe" label="Mitarbeitergruppe" type="string" defaultValue="Mitarbeiter Gruppe C"/>
+        </camunda:formData>
+      </bpmn:extensionElements>
       <bpmn:outgoing>SequenceFlow_1g9v7oc</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:businessRuleTask id="dmnTaskRechnungsPruefung" camunda:resultVariable="result" camunda:decisionRef="BerechtigungsMatrix" camunda:mapDecisionResult="singleEntry" name="Rechnungs &#xA;Informationen&#xA;prüfen">
@@ -21,7 +28,7 @@
       <bpmn:outgoing>SequenceFlow_VA</bpmn:outgoing>
       <bpmn:outgoing>SequenceFlow_VC</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:userTask id="MitarbeiterFormFelder" camunda:formKey="Rechnungsinformation" name="Rechnung&#xA;erstellen">
+    <bpmn:userTask id="MitarbeiterFormFelder" camunda:formKey="Rechnungsinformation" camunda:assignee="mary" name="Rechnung&#xA;erstellen">
       <bpmn:extensionElements>
         <camunda:formData>
           <camunda:formField id="Rechnungsnummer" label="Rechnungsnummer" type="long" defaultValue="1"/>
