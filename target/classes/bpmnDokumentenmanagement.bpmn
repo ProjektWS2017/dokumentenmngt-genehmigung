@@ -7,7 +7,7 @@
     <bpmn:endEvent id="EndEvent_0de1iqz" name="Rechnung freigegeben">
       <bpmn:incoming>SequenceFlow_1i7zddg</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:startEvent id="StartEvent_1" name="Rechnungs&#xA;Freigabeprozess&#xA;gestarted">
+    <bpmn:startEvent id="StartEvent_1" camunda:formKey="Rechnungsinformation" name="Rechnungs&#xA;Freigabeprozess&#xA;gestarted">
       <bpmn:extensionElements>
         <camunda:formData>
           <camunda:formField id="Rechnungsnummer" label="Rechnungsnummer" type="long"/>
@@ -43,18 +43,18 @@
       <bpmn:incoming>SequenceFlowFreigeben</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_1i7zddg</bpmn:outgoing>
     </bpmn:serviceTask>
-    <bpmn:sendTask id="Task_03undne" camunda:class="com.thbrandenburg.camunda.meister.docmanagement.genehmigung.RechnungAnVorgesetzten" name="zur Prüfung an Vorgesetzten A versenden">
+    <bpmn:sendTask id="Task_03undne" camunda:class="com.thbrandenburg.camunda.meister.docmanagement.genehmigung.RechnungAnVorgesetztenA" name="zur Prüfung an Vorgesetzten A versenden">
       <bpmn:incoming>SequenceFlow_VA</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_05a547k</bpmn:outgoing>
     </bpmn:sendTask>
     <bpmn:endEvent id="EndEvent_0rp9iev" name="zur Prüfung &#xA;an Vorgesetzten A versendet">
       <bpmn:incoming>SequenceFlow_05a547k</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:sendTask id="SendTask_0l1p0ho" camunda:class="com.thbrandenburg.camunda.meister.docmanagement.genehmigung.RechnungAnVorgesetzten" name="zur Prüfung an Vorgesetzten B versenden">
+    <bpmn:sendTask id="SendTask_0l1p0ho" camunda:class="com.thbrandenburg.camunda.meister.docmanagement.genehmigung.RechnungAnVorgesetztenB" name="zur Prüfung an Vorgesetzten B versenden">
       <bpmn:incoming>SequenceFlow_VB</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_1qx74wl</bpmn:outgoing>
     </bpmn:sendTask>
-    <bpmn:sendTask id="SendTask_1h56aoq" camunda:class="com.thbrandenburg.camunda.meister.docmanagement.genehmigung.RechnungAnVorgesetzten" name="zur Prüfung an Vorgesetzten C versenden">
+    <bpmn:sendTask id="SendTask_1h56aoq" camunda:class="com.thbrandenburg.camunda.meister.docmanagement.genehmigung.RechnungAnVorgesetztenC" name="zur Prüfung an Vorgesetzten C versenden">
       <bpmn:incoming>SequenceFlow_VC</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_0chhihd</bpmn:outgoing>
     </bpmn:sendTask>

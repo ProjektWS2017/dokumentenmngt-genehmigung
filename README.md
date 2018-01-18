@@ -160,3 +160,24 @@ Und dadurch werden Instances zu den Prozess aktiv:
 ![CAMP4](https://lh6.googleusercontent.com/S9uTRJAXKbmL5BEXaT2RLjONkqRECBkMCeGqQWmuhtI-UYDdWnkW03I1p2kUnrTmEgDnV8stq6tRejeQ4z74Tg3eFL-KO_3-Dw-XGrVZF5pumPlhsXwUMSLaG0zE5t5IBh-VDg3R)
 
 
+
+### Camunda EMail aus einer Aktivität
+
+
+Ist der Rechnungsbetrag für die jeweilige Mitarbeitergruppe zu hoch, wird an den entsprechenden Vorgesetzten eine EMail gesandt.
+
+Zum EMail Versandt, wird eine Java Klasse mit der Aktivität verknüpft und in der Klasse die Funktionalität realisiert.
+Wir verknüpfen:
+
+com.thbrandenburg.camunda.meister.docmanagement.genehmigung.RechnungAnVorgesetztenA
+
+Das Versenden an sich benötigt einen EMail Server oder einen Web Service aufruf, um mit einem Webmail Account eine EMail zu verschicken.
+Lösung Dokumentiert:
+
+https://javaee.github.io/javamail/
+https://stackoverflow.com/questions/31392100/eclipse-java-send-email-from-gmail-smtp-programatically
+
+
+![MAILA](https://lh5.googleusercontent.com/CPVgBcXxvEj42N6eBvVMkvs_F-6cpZHn3fdE2HDN4UqL38M7XVAdBxPZcOvvTfQhqdrdgPlKKJPUHV4Vsj1Mt6UeX-ufe2QzFEKgbGZtTYR-fYTTlO1njQ3gWNoZ92LoM3WrfIU5)
+
+
