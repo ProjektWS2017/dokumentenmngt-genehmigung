@@ -7,7 +7,7 @@ import org.camunda.bpm.engine.delegate.JavaDelegate;
  * service implementation
  * class as a BPMN 2.0 Service Task delegate.
  */
-public class RechnungAnVorgesetzten implements JavaDelegate {
+public class RechnungAnVorgesetztenC implements JavaDelegate {
 	   
   public void execute(DelegateExecution execution) throws Exception {
     
