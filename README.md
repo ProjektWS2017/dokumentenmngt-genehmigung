@@ -160,6 +160,9 @@ Und dadurch werden Instances zu den Prozess aktiv:
 ![CAMP4](https://lh6.googleusercontent.com/S9uTRJAXKbmL5BEXaT2RLjONkqRECBkMCeGqQWmuhtI-UYDdWnkW03I1p2kUnrTmEgDnV8stq6tRejeQ4z74Tg3eFL-KO_3-Dw-XGrVZF5pumPlhsXwUMSLaG0zE5t5IBh-VDg3R)
 
 
+Wird der Prozess gestartet, kann der Bearbeiter die Rechnung hochladen:
+![CAMP5](https://lh4.googleusercontent.com/PiEFGyA6-3_yB9orBF0tFaL0zTluzFbaayG5CsztKxhcHyKes1Pzk2yQP0MsNRlB8b-2Bcw-5mcWpykaMp4phmgm9VH9UltyExTI5aAEy7woJeogXkHajydFFvd0E5dazG6bov85)
+
 
 ### Camunda EMail aus einer Aktivität
 
