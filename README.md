@@ -1,5 +1,8 @@
 # Der BPM Prozess im Dokumentenmanagement System zur Rechnungsfreigabe
 
+Link zur Confluence Dokumentation:
+https://fbwprojekte.th-brandenburg.de/confluence/display/DS/Dokumentenmanagement+System+Home
+
 ## Der Prozess im Camunda Modeller
 
 Der Prozess wurde in Camunda modelliert.
